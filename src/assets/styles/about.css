@@ -1,0 +1,173 @@
+/* About Section Styles */
+.about {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  font-weight: 600;
+  color: #ccd6f6;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 300px;
+  height: 1px;
+  background-color: #233554;
+  margin-left: 20px;
+}
+
+.section-number {
+  color: #64ffda;
+  font-family: 'SF Mono', monospace;
+  font-size: 1.2rem;
+  margin-right: 0.8rem;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.about-description p {
+  color: #a8b2d1;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.highlight {
+  color: #64ffda;
+}
+
+.skills-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  color: #8892b0;
+  font-family: 'SF Mono', monospace;
+  font-size: 0.9rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.skill-arrow {
+  color: #64ffda;
+  position: absolute;
+  left: 0;
+}
+
+.about-image {
+  position: relative;
+  width: 300px;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.profile-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: grayscale(100%) contrast(1);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.image-wrapper:hover .profile-img {
+  filter: none;
+}
+
+.image-border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #64ffda;
+  border-radius: 5px;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+  transition: all 0.3s ease;
+}
+
+.image-wrapper:hover .image-border {
+  top: 15px;
+  left: 15px;
+}
+
+.image-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(100, 255, 218, 0.1);
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  mix-blend-mode: screen;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.image-wrapper:hover .image-overlay {
+  opacity: 0.2;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .about-image {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title::after {
+    width: 100px;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    gap: 0;
+  }
+}
