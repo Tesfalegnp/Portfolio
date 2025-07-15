@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import AllProjects from './components/AllProjects'; 
 import VisitorCounter from './components/VisitorCounter';
 import './App.css';
 
@@ -19,6 +20,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
+      <AllProjects />
       <VisitorCounter />
     </div>
   );

@@ -28,7 +28,7 @@ const Hero = () => {
             className="hero-text"
           >
             <h6 className="greeting">Hi, my name is</h6>
-            
+
             <motion.h1
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -36,7 +36,7 @@ const Hero = () => {
             >
               Tesfalegn Petros<span className="highlight">.</span>
             </motion.h1>
-            
+
             <motion.h2
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -44,7 +44,7 @@ const Hero = () => {
             >
               I build <span className="highlight">AI solutions</span> and <span className="highlight">web experiences</span>
             </motion.h2>
-            
+
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -54,7 +54,7 @@ const Hero = () => {
               I'm an AI Engineer and Full Stack Developer currently working at iCog Labs, 
               passionate about creating intelligent systems and beautiful interfaces.
             </motion.p>
-            
+
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}

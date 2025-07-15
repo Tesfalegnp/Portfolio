@@ -57,7 +57,7 @@ const Header = () => {
             setActiveSection('hero');
           }}
         >
-          <img src={logoImage} alt="Tesfalegn P. Logo" className="logo-image" />
+          <img src={logoImage} alt="Tesfalegn. Logo" className="logo-image" />
           <span className="logo-text">Tesfalegn P.</span>
         </Link>
 
