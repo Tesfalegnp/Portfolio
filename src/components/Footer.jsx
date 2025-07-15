@@ -27,7 +27,7 @@ const Footer = () => {
     },
     {
       name: 'LeetCode',
-      url: 'https://leetcode.com/yourprofile',
+      url: 'https://leetcode.com/u/Tesfish-12',
       icon: <SiLeetcode />,
       color: '#FFA116',
     },
